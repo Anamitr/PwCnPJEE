@@ -1,0 +1,22 @@
+VB 6.1  Vagrant 2.2.7
+VB 6.0  Vagran 2.2.5
+HADOOP_VERSION = 2.6.4
+vagrant plugin install vagrant-vbguest
+
+W vagrant file cpu dac 1. Pamieci zalezy ile mamy w komputerze. Pamieci bezpiecznie 2GB na mastera, na 2 slavy po 1.
+files - pliki do skopiowania
+shells - skrypty ktore sie uruchomia po wstaniu maszyny
+
+vagrant up                                      - uruchamia wszystkie 3 naraz
+vagrant up hadoop-master                        - uruchamiamy tylko hadoop-master
+vagrant ssh hadoop-master                       - logowanie
+cd scripts && sh jps.sh                         - powinno wypisac jednego mastera i dwa slavy
+
+W dokumentacji na Hadoopie wpisac w linku 2.6.4
+Opcjonalnie ustawic single-node
+Przeczytac general cluster setup
+
+Uzupleniajac pliki xml nie trzeba dopisywac nowych wartosci, tylko uzupelnic value dla tych ktore sa.
+localhost:50070 - overview hadoop
+
+W plikach master i slaves wpisac numery ip albo nazwy tychze.
