@@ -1,0 +1,1 @@
+vagrant up hadoop-master | tee "startup_logs/slave1_startup_$(date +%Y-%m-%d_%H:%M).log" ; vagrant up hadoop-slave1 | tee "startup_logs/slave2_startup_$(date +%Y-%m-%d_%H:%M).log" ; vagrant up hadoop-slave2 | tee "startup_logs/master_startup_$(date +%Y-%m-%d_%H:%M).log"
