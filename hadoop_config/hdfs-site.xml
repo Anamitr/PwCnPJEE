@@ -3,6 +3,10 @@
 		<name>dfs.webhdfs.enabled</name>
 		<value>false</value>
 	</property>
+	<property>
+                <name>dfs.namenode.rpc-address</name>
+                <value>hadoop-master:9000</value>
+        </property>
     <property>
 	    <name>dfs.replication</name>
 	    <value>1</value>
