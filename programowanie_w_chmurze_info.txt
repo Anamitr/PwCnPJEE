@@ -21,5 +21,14 @@ localhost:50070 - overview hadoop
 
 W plikach master i slaves wpisac numery ip albo nazwy tychze.
 
-Pytania.
-1. Dlaczego po każdym uruchomieniu tyle ściąga? Zamykam destroy, ale jak zamkne haltem to czy konfiguracja załaduje się na nowo?
+
+Notes
+- to poweroff virtual machines use "vagrant halt", to turn them on "vagrant up" (the same as creating)
+- use mvn from this system, not virtual machine
+- to build project with maven and generate .jar use "mvn install" command
+- before starting calculation with hadoop, you have to start it with demo.sh (or start.sh or sth like that)
+- put files with "hadoop fs -put file destination"
+- move/remove file input/hadoop or it won't work (or put input files in another folder)
+- run program with "hadoop jar jar_name class_to_run input_folder output_folder"
+- print output with "hadoop fs -cat output_dir/*"
+- to delete folder and its files use "hadoop fs -rm -R URI"
