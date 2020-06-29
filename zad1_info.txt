@@ -32,3 +32,16 @@ Notes
 - run program with "hadoop jar jar_name class_to_run input_folder output_folder"
 - print output with "hadoop fs -cat output_dir/*"
 - to delete folder and its files use "hadoop fs -rm -R URI"
+
+hadoop_multi_node_3 - freshest
+
+https://hadoop.apache.org/docs/r2.6.4/hadoop-project-dist/hadoop-common/ClusterSetup.html
+https://hadoop.apache.org/docs/r2.6.4/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml
+Paremeters:
+fs.default.name                 - adres hdfs, systemu plików hadoopa
+dfs.webhdfs.enabled             - właczenie REST API do obsługi hadoopa
+dfs.namenode.rpc-address        - podane przez prowadzącego, adres do obsługi klientów?
+dfs.replication                 - number of file replications
+mapreduce.framework.name        - https://mapr.com/docs/61/ReferenceGuide/mapred-site.xml.html
+yarn.resourcemanager.hostname   - "host" from docs
+yarn.nodemanager.aux-services   - "shuffle service that needs to be set for Map Reduce applications." from docs
